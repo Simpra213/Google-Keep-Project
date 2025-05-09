@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+/*nav bar section*/
+
+header {
+    display: flex;
+    height: 64px;
+    width: 99vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left-end {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    height: 40px;
+    width: 44px;
+}
+/*nav bar section*/
+
+/*Aside section*/
+
+aside > span {
+    display: flex;
+    align-items: center;
+}
+
+.side-bar {
+    height: 100vh;
+    width: 280px;
+    float: left;
+}
+
+
+main {
+    float: left;
+    width: 600px;
+    height: 100vh;
+    padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#title > div:focus, #note > div:focus {
+    outline: none;
+}
+
+#actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title > div, #note > div, #actions, .note {
+    padding: 0 15px;
+}
+
+#title > div {
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+#note > div {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#actions > div:first-child > span {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+#actions > div > .first {
+    margin-left: 0;
+}
+
+#close {
+    padding: 8px 24px;
+}
+
+#note-card, .note {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(224, 224, 224); 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px 0px;
+    box-sizing: border-box;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.note {
+    height: 128px;
+    margin: 16px 0;
+}
+
+.note > p {
+    margin: 0;
+    padding: 12px 0;
+}

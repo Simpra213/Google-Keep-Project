@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        
+            <section id="logo" class="nav-left-end">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                <img class="main-logo" src="./Assets/google-keep.svg">
+                
+                <h3>Keep</h3>
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <label>
+                    <input id="search-bar" type="text" placeholder="Search">
+                </label>
+    
+            </section>
+    
+            <section class="nav-right-end">
+                <span class="material-symbols-outlined">
+                    refresh
+                    </span>
+    
+                    <span class="material-symbols-outlined">
+                        grid_view
+                        </span>
+    
+                     <span class="material-symbols-outlined">
+                            settings
+                            </span>
+    
+                                <span class="material-symbols-outlined">
+                                    apps
+                                    </span>
+    
+                                    <span class="material-symbols-outlined">
+                                        account_circle
+                                        </span>
+    
+    
+            </section>
+       
+        
+
+
+
+
+
+    </header>
+    
+    <section class="side-bar">
+        <aside>
+
+            <span>
+                <span class="material-symbols-outlined">
+                    lightbulb_2
+                    </span>
+                    
+                    <p>Notes</p>
+            </span>
+                
+
+            <span>
+                <span class="material-symbols-outlined">
+                    notifications
+                    </span>
+
+                    <p>Reminders</p>
+            </span>
+                
+            
+            <span>
+                <span class="material-symbols-outlined">
+                    edit
+                    </span>
+                    
+                    <p>Edit Labels</p>
+
+            </span>
+                
+            <span>
+                <span class="material-symbols-outlined">
+                    archive
+                    </span>
+                    
+                    <p>Archive</p>
+            </span>
+                
+
+            <span>
+                <span class="material-symbols-outlined">
+                    delete
+                    </span>
+                    
+                    <p>Bin</p>
+            </span>
+              
+                    
+            
+
+        </aside>
+    </section>
+
+<main>
+    <div id="note-card">
+
+        <div id="title">
+            <div id="note-title" contenteditable="true" aria-multiline="true" aria-label="Title">Title</div>
+        </div>
+
+        <div id="note">
+            <div id="note-content" contenteditable="true" aria-multiline="true" aria-label="note">Take a note...</div>
+        </div>
+
+        <div id="actions">
+            <div>
+                <span class=" first material-symbols-outlined">
+                    palette
+                    </span>
+    
+                    <span class="material-symbols-outlined">
+                        add_alert
+                        </span>
+    
+                        <span class="material-symbols-outlined">
+                            person_add
+                            </span>
+    
+                            <span class="material-symbols-outlined">
+                                image
+                                </span>
+    
+                                <span class="material-symbols-outlined">
+                                    archive
+                                    </span>
+    
+                                    <span class="material-symbols-outlined">
+                                        more_vert
+                                        </span>
+    
+                                    <span class="material-symbols-outlined">
+                                        undo
+                                        </span>
+    
+                                    <span class="material-symbols-outlined">
+                                        redo
+                                        </span> 
+            </div>
+
+            <div>
+                <span id="close"onclick="takeNote()">Close</span>
+            </div>
+        </div>
+        
+        
+        <!-- <span class="material-symbols-outlined">
+            check_box
+            </span>
+
+            <span class="material-symbols-outlined">
+                brush
+                </span>
+
+                <span class="material-symbols-outlined">
+                    image
+                    </span> -->
+
+        
+        
+    </div>
+
+    <div id="display">
+        <!-- <div class="note">
+            <p class="title">Title</p>
+            <p class="content">Take a note...</p>
+            <div class="actions"></div>
+        </div> -->
+       
+    </div>
+
+    
+
+</main>
+<script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
