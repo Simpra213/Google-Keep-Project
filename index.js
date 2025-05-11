@@ -14,7 +14,7 @@ function takeNote() {
     new_title.innerText = title.innerText;
 
     const new_content = document.createElement("p");
-    new_content.InnerText = content.innerText;
+    new_content.innerText = content.innerText;
 
     //Adding the new children to mother container 'note'
     note.appendChild(new_title);

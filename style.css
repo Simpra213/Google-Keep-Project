@@ -3,18 +3,21 @@
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 250;
+    font-weight: 400;
     font-style: normal;
+    margin: 0;
 }
 
-/*nav bar section*/
+/*nav bar section starts*/
 
 header {
     display: flex;
     height: 64px;
     width: 99vw;
+    padding: 8px;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .nav-left-end {
@@ -22,11 +25,24 @@ header {
     align-items: center;
 }
 
+#menu-icon {
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+    margin: 0 4px;
+}
+
 .main-logo {
     height: 40px;
     width: 44px;
 }
-/*nav bar section*/
+
+#logo-title {
+    font-size: 24px;
+    color: rgb(95, 99, 104);
+}
+
+/*nav bar section ends*/
 
 /*Aside section*/
 
