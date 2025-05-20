@@ -14,7 +14,6 @@ header {
     display: flex;
     height: 64px;
     width: 99vw;
-    padding: 8px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(224, 224, 224);
@@ -23,6 +22,10 @@ header {
 .nav-left-end {
     display: flex;
     align-items: center;
+}
+
+.material-symbols-outlined {
+    color: rgb(95, 99, 104);
 }
 
 #menu-icon {
@@ -39,9 +42,10 @@ header {
 }
 
 #logo-title {
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(95, 99, 104);
     padding-left: 4px;
+    padding-right: 90px;
 }
 
 #search-bar {
@@ -49,30 +53,70 @@ header {
     height: 46px;
     display: flex;
     align-items: center;
+    background: rgb(241, 243, 244);
+    border-radius: 8px;
 }
 
 #search-input {
     width: 615px;
     height: 24px;
+    border: none;
+    font-size: 16px;
+    background: rgb(241, 243, 244);
 }
 
-#search-icon {
+#search-input:focus {
+    outline: none;
+    background: white;
+}
+
+#search-icon, #close-icon {
+    margin: 22px 9px;
     padding: 0 5px;
 }
 
+.nav-right-end > span {
+    margin: 0 10px;
+}
+
+#settings-icon {
+    margin-right: 40px;
+}
+
 /*nav bar section ends*/
+
+
 
 /*Aside section*/
 
 aside > span {
     display: flex;
     align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 11px;
 }
+
+#aside-icon {
+    margin: 0 12px;
+}
+
+span > p {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#first-button {
+    background-color: rgb(254, 239, 195);
+}
+
+
 
 .side-bar {
     height: 100vh;
     width: 280px;
     float: left;
+    padding-top: 8px;
 }
 
 
