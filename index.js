@@ -107,7 +107,9 @@ function displayNotes() {
 function appendLastNote() {
     let lastNote = loadNotes()[loadNotes().length - 1];
     const display = document.getElementById("display");
-    note.classList.add("note");
+
+    const noteDiv = document.createElement("div"); // create a new div
+    noteDiv.classList.add("note"); // apply class to the new div
 
     //Make an element with a 'p' tag for Id 'title, the 'innerText' function allows for a visual text eg 'p' tag (paragraph) to be visible to the user
     const new_title = document.createElement("p");
@@ -117,10 +119,15 @@ function appendLastNote() {
     new_content.innerText = lastNote.content;
 
     //Adding the new children to mother container 'note'
-        note.appendChild(new_title);
-        note.appendChild(new_content);
+        noteDiv.appendChild(new_title);
+        noteDiv.appendChild(new_content);
         //Adding <div class="note"> as a child to mother container 'display'
-        display.appendChild(note);
+        display.appendChild(noteDiv);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const closeButton = document.getElementById("close");
+    closeButton.addEventListener("click", takeNote);
+});
 
 displayNotes();
